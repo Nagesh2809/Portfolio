@@ -1,5 +1,5 @@
 This is my portfolio.
-You can see this website here: https://github.com/Nagesh2809/Portfolio.git
+You can see this website here: https://nagesh2809.github.io/Portfolio/
 
 I have made this with the help of a youtube tutorial which you can find it here "Responsive Portfolio Website From Scratch" from How to become a developer channel.
 
