@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nagesh Kure</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#exp">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nagesh Kure</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile-container">
+        <div class="section__pic-container">
+          <video autoplay muted loop class="animated-video">
+            <source src="./assets/ani.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Nagesh Kure</h1>
+          <!-- <p class="section__text__p2">AI Engineer</p> -->
+          <p class="section__text__p2">Working as AI Engineer at Codetru</p>
+          <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/11z6DTX4F4vvrgnKb-zYhCJT_JELEcbhi/view?usp=sharing')"
+          >
+            Download CV
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/nageshkure', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Nagesh2809', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/trip.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>MCA<br />From Pratibha Institute of Buisness Management Chinchwad,Pune. 2022-24</p>
+            </div>
+              
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Working as AI ML and Python Backend Developer at Codetru<br />Actively looking for a job</p>
+            </div>
+              
+          </div>
+          <div class="text-container">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Hi! I'm Nagesh, an aspiring <b>AI/ML Engineer</b> with an <b>MCA</b> degree. 
+              I am from Parbhani, Maharashtra. I have hands-on experience in developing AI/ML solutions, 
+              building RESTful APIs, and working with frameworks like <b>FastAPI, LangChain, LangGraph</b>, and 
+              <b>Streamlit</b>. I am passionate about solving real-world problems using <b>Machine Learning, Deep Learning, 
+              NLP</b>, and <b>Generative AI</b>. Currently seeking an opportunity to leverage my technical expertise 
+              and contribute to impactful projects in a growth-driven organization.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#exp'"
+      /> -->
+
+      <a href="#exp" class="scroll-arrow">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+
+    </section>
+
+    <!-- <section id="exp">
+      <p class="section__text__p1">My Professional Journey</p>
+      <h1 class="title">Experience</h1>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-date">Feb 2025 – Apr 2025</div>
+            <div class="timeline-content">
+              <h2 class="experience-title"> AI Engineer Intern</h2>
+              <h3 class="company-name">Konu Software solution Technologies</h3>
+              <p>  Built a multi-agent AI-powered real estate assistant chatbot for property search, financing, and EMI calculations, achieving 90% response accuracy..</p>
+              <p> Eliminated parsing errors by replacing deprecated libraries, improving system stability by 15%.</p>
+              <p>Replaced legacy wrapper classes with Modal Context Protocol (MCP) for seamless tool integration with the LLM.</p>
+              <p>Collaborated with the team to implement new features and enhance code quality.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 2025 – Jun 2025</div>
+            <div class="timeline-content">
+              <h2 class="experience-title"> Backend Developer Intern</h2>
+              <h3 class="company-name">Codetru</h3>
+              <p>  Developed and enhanced RESTful APIs using FastAPI with PostgreSQL, leveraging generic classes for modular database operations boosting request processing speed by 25%.</p>
+              <p> Designed and implemented data validation schemas using Pydantic, ensuring accurate data handling and reducing input errors by 30%.</p>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2025 – Present</div>
+            <div class="timeline-content">
+              <h2 class="experience-title"> AI Engineer Intern</h2>
+              <h3 class="company-name">Codetru</h3>
+              <p>  Built an AI-powered employee onboarding and document automation system, reducing manual verification time by 40%.</p>
+              <p>  Developed data extraction pipelines for Document like PAN, Aadhaar, Passports, and Offer Letters with >95% accuracy by optimizing OCR and preprocessing techniques.</p>
+              <p> Implemented MCP (Model Context Protocol) to integrate multiple tools for seamless onboarding, authentication, and HR approvals.</p>
+              <p> Built real-time HR dashboards using analytics pipelines to improve process efficiency and tracking.</p>
+            </div>
+          </div>
+        </div>
+      
+
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+    </section> -->
+
+  <section id="exp">
+  <p class="section__text__p1">My Professional Journey</p>
+  <h1 class="title">Experience</h1>
+
+  <div class="timeline-container">
+    <!-- Experience 1 -->
+    <div class="timeline-item">
+      <div class="timeline-date">Feb 2025 – Apr 2025</div>
+      <div class="timeline-content">
+        <h2 class="experience-title">AI Engineer Intern</h2>
+        <h3 class="company-name">Konu Software solution Technologies</h3>
+        <p>Built a multi-agent AI-powered real estate assistant chatbot for property search, financing, and EMI calculations, achieving 90% response accuracy.</p>
+        <p>Eliminated parsing errors by replacing deprecated libraries, improving system stability by 15%.</p>
+        <p>Replaced legacy wrapper classes with Modal Context Protocol (MCP) for seamless tool integration with the LLM.</p>
+        <p>Collaborated with the team to implement new features and enhance code quality.</p>
+      </div>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="timeline-item">
+      <div class="timeline-date">Apr 2025 – Jun 2025</div>
+      <div class="timeline-content">
+        <h2 class="experience-title">Backend Developer Intern</h2>
+        <h3 class="company-name">Codetru</h3>
+        <p>Developed and enhanced RESTful APIs using FastAPI with PostgreSQL, leveraging generic classes for modular database operations boosting request processing speed by 25%.</p>
+        <p>Designed and implemented data validation schemas using Pydantic, ensuring accurate data handling and reducing input errors by 30%.</p>
+      </div>
+    </div>
+
+    <!-- Experience 3 -->
+    <div class="timeline-item">
+      <div class="timeline-date">Jun 2025 – Present</div>
+      <div class="timeline-content">
+        <h2 class="experience-title">AI Engineer Intern</h2>
+        <h3 class="company-name">Codetru</h3>
+        <p>Built an AI-powered employee onboarding and document automation system, reducing manual verification time by 40%.</p>
+        <p>Developed data extraction pipelines for Document like PAN, Aadhaar, Passports, and Offer Letters with >95% accuracy by optimizing OCR and preprocessing techniques.</p>
+        <p>Implemented MCP (Model Context Protocol) to integrate multiple tools for seamless onboarding, authentication, and HR approvals.</p>
+        <p>Built real-time HR dashboards using analytics pipelines to improve process efficiency and tracking.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow Icon -->
+  <!-- <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  /> -->
+  <a href="#experience" class="scroll-arrow">
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+</a>
+
+</section>
+
+
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL  </h3>
+                  <p>Proficient </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kafka</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AI/ML</h3>
+                  <p>Proficient</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <P>NLP,Computer Vision</P>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vector Databases</h3>
+                  <p>Pincone,ChromaDB,FAISS</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> MCP</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Model Fine-Tuning</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>EDA, Statistics</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+      <a href="#projects" id="scrollArrow" class="scroll-arrow">
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-grid-container">
+        <!-- Project 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/loan_prediction.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Loan Approval Prediction System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Nagesh2809/Loan_Prediction', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://loan-prediction-lmuy.onrender.com', '_blank')">Live Demo</button>
+          </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/car_pp.jpeg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title"> Automatic Number Plate Recognition (ANPR) System</h2>
+          <div class="btn-container">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rahul420206/Information-Management-System', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Semi-Supervised Classification with GCN</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rahul420206/Semi-Supervised-Classification-with-Graph-Convolutional-Networks', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rahul420206/Semi-Supervised-Classification-with-Graph-Convolutional-Networks/blob/main/Node_Classification_GCN_Semi-Sup_CORA.ipynb', '_blank')">Live Demo</button>
+          </div>
+        </div> -->
+    
+        <!-- Project 4 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/llm.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">LLM Based RAG Search</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Nagesh2809/Vector_DB_FAISS', '_blank')">Github</button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://live-demo-link.com/project-4', '_blank')">Live Demo</button> -->
+          </div>
+        </div>
+    
+        <!-- Project 5
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/healt.png" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Health Report Analyzer</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rahul420206/Health-Report-Analyzer', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://live-demo-link.com/project-5', '_blank')">Live Demo</button>
+          </div>
+        </div>
+     -->
+        <!-- Project 6
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/alu.png" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Alumni Web <br> Portal</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rahul420206/My-First-Project', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://rahul420206.github.io/My-First-Project/', '_blank')">Live Demo</button>
+          </div>
+        </div> -->
+    
+      </div>
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
+       <a href="#contact" class="scroll-arrow">
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+</a>
+
+    </section>
+    
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kurenagesh2000@gmail.com">kurenagesh2000@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nageshkure" target="_blank">LinkedIn</a></p>
+          
+          <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="rahul-matta-a42585200" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/nageshkure">Nagesh Kure</a></div> -->
+          <div class="contact-info-container">
+      <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+      <p><a href="tel:+919665388168">+91 96653 88168</a></p>
+    </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nagesh Kure. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
